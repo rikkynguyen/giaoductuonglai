@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Giáo Dục Tương Lai</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/flickity.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<div class="container">
+			<a class="navbar-brand" href="#">Giáo Dục Tương Lai</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Tin tức</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="eduInfo" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Thông tin giáo dục
+						</a>
+						<div class="dropdown-menu" aria-labelledby="eduInfo">
+							<a class="dropdown-item" href="#">Chương trình Đại học</a>
+							<a class="dropdown-item" href="#">Chương trình sau Đại học </a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Trường và trung tâm</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Liên hệ</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8">
+				<form class="form-inline my-2">
+					<div class="form-group">
+						<select class="form-control custom-select mb-2 mr-sm-2 mb-sm-0" id="exampleFormControlSelect1">
+							<option>Chương trình học</option>
+							<option>Đại học trong nước</option>
+							<option>Sau Đại học</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<select class="form-control custom-select mb-2 mr-sm-2 mb-sm-0" id="exampleFormControlSelect1">
+							<option>Ngành</option>
+							<option>Quản trị kinh doanh</option>
+							<option>Thiết kế</option>
+							<option>Lập trình</option>
+							<option>Xây dựng</option>
+							<option>Kiến trúc</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<select class="form-control custom-select mb-2 mr-sm-2 mb-sm-0" id="exampleFormControlSelect1">
+							<option>Ở đâu</option>
+							<option>Trong nước</option>
+							<option>Du học</option>
+						</select>
+					</div>
+					<button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+			<div class="col-sm-4">
+				<form action="/search" accept-charset="UTF-8" method="get" class="my-2">
+					<div class="input-group">
+						<span class="input-group-addon" id="basic-addon3">Hoặc</span>
+						<input type="text" name="search" id="search" placeholder="Tìm kiếm thông tin học..." class="form-control">
+						<span class="input-group-btn">
+							<input type="submit" name="commit" value="Search" class="btn btn-success" data-disable-with="Search">
+						</span> 
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="carousel" data-flickity='{ "cellSelector": ".carousel-cell" }'>
+		<div class="carousel-cell"></div>
+		<div class="carousel-cell"></div>
+		<div class="carousel-cell"></div>
+	</div>
+
+	<section class="carousel slide" data-ride="carousel" id="postsCarousel">
+		<div class="container">
+			<h1 class="my-3">Top trường Đại học</h1>
+			<div class="row">
+				<div class="col-xs-12 text-md-right lead">
+					<a class="btn btn-outline-secondary prev" href="" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
+					<a class="btn btn-outline-secondary next" href="" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="container p-t-0 m-t-2 carousel-inner">
+			<div class="row row-equal carousel-item active m-t-0">
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-img-top card-img-top-250">
+							<img class="img-fluid" src="http://i.imgur.com/EW5FgJM.png" alt="Carousel 1">
+						</div>
+						<div class="card-block p-t-2">
+							<h6 class="small text-wide p-b-2">Insight</h6>
+							<h2>
+								<a href>Why Stuff Happens Every Year.</a>
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-img-top card-img-top-250">
+							<img class="img-fluid" src="http://i.imgur.com/Hw7sWGU.png" alt="Carousel 2">
+						</div>
+						<div class="card-block p-t-2">
+							<h6 class="small text-wide p-b-2">Development</h6>
+							<h2>
+								<a href>How to Make Every Line Count.</a>
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-img-top card-img-top-250">
+							<img class="img-fluid" src="http://i.imgur.com/g27lAMl.png" alt="Carousel 3">
+						</div>
+						<div class="card-block p-t-2">
+							<h6 class="small text-wide p-b-2">Design</h6>
+							<h2>
+								<a href>Responsive is Essential.</a>
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row row-equal carousel-item m-t-0">
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-img-top card-img-top-250">
+							<img class="img-fluid" src="//visualhunt.com/photos/l/1/office-student-work-study.jpg" alt="Carousel 4">
+						</div>
+						<div class="card-block p-t-2">
+							<h6 class="small text-wide p-b-2">Another</h6>
+							<h2>
+								<a href>Tagline or Call-to-action.</a>
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-img-top card-img-top-250">
+							<img class="img-fluid" src="//visualhunt.com/photos/l/1/working-woman-technology-computer.jpg" alt="Carousel 5">
+						</div>
+						<div class="card-block p-t-2">
+							<h6 class="small text-wide p-b-2"><span class="pull-xs-right">12.04</span> Category 1</h6>
+							<h2>
+								<a href>This is a Blog Title.</a>
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 fadeIn wow">
+					<div class="card">
+						<div class="card-img-top card-img-top-250">
+							<img class="img-fluid" src="//visualhunt.com/photos/l/1/people-office-team-collaboration.jpg" alt="Carousel 6">
+						</div>
+						<div class="card-block p-t-2">
+							<h6 class="small text-wide p-b-2">Category 3</h6>
+							<h2>
+								<a href>Catchy Title of a Blog Post.</a>
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="container p-3">
+		<h2 class="h2 my-3">Thông tin tuyển sinh</h2>
+
+		<div class="row">
+			<div class="col-sm-6 my-2">
+				<div class="card h-100">
+					<img class="card-img-top" src="images/largeImage.svg" alt="Card image cap">
+					<div class="card-body">
+						<h4 class="card-title">Card title</h4>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+					<div class="card-footer">
+						<small class="text-muted">Last updated 3 mins ago</small>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 my-2">
+				<div class="media">
+					<img class="mr-3" src="images/squareImage.svg" alt="Generic placeholder image" width="120px" height="120px">
+					<div class="media-body">
+						<h5 class="mt-0">Media heading</h5>
+						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+					</div>
+				</div>
+				<div class="media mt-3">
+					<img class="mr-3" src="images/squareImage.svg" alt="Generic placeholder image" width="120px" height="120px">
+					<div class="media-body">
+						<h5 class="mt-0">Media heading</h5>
+						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+					</div>
+				</div>
+				<div class="media mt-3">
+					<img class="mr-3" src="images/squareImage.svg" alt="Generic placeholder image" width="120px" height="120px">
+					<div class="media-body">
+						<h5 class="mt-0">Media heading</h5>
+						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+					</div>
+				</div>
+				<div class="media mt-3">
+					<img class="mr-3" src="images/squareImage.svg" alt="Generic placeholder image" width="120px" height="120px">
+					<div class="media-body">
+						<h5 class="mt-0">Media heading</h5>
+						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/flickity.pkgd.min.js"></script>
+	
+
+	<script type="text/javascript">
+		(function($) {
+			"use strict";
+			$('.next').click(function(){ $('.carousel').carousel('next');return false; });
+			$('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
+		})(jQuery);
+	</script>
+
+	<style type="text/css">
+	.carousel {
+		background: #FAFAFA;
+		position: relative;
+		padding: 30px 0 50px;
+	}
+
+	.carousel-cell {
+		width: 66%;
+		height: 400px;
+		margin-right: 10px;
+		background: #8C8;
+		border-radius: 5px;
+		counter-increment: carousel-cell;
+	}
+
+	/* cell number */
+	.carousel-cell:before {
+		display: block;
+		text-align: center;
+		content: counter(carousel-cell);
+		line-height: 400px;
+		font-size: 80px;
+		color: white;
+	}
+</style>
+</body>
+</html>
