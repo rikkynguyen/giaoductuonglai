@@ -9,6 +9,7 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href="css/flickity.css" rel="stylesheet">
+	<link href="css/carousel-slide.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -45,7 +46,7 @@
 			</div>
 		</div>
 	</nav>
-	
+
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-8">
@@ -84,7 +85,7 @@
 						<input type="text" name="search" id="search" placeholder="Tìm kiếm thông tin học..." class="form-control">
 						<span class="input-group-btn">
 							<input type="submit" name="commit" value="Search" class="btn btn-success" data-disable-with="Search">
-						</span> 
+						</span>
 					</div>
 				</form>
 			</div>
@@ -249,7 +250,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/flickity.pkgd.min.js"></script>
-	
+
 
 	<script type="text/javascript">
 		(function($) {
@@ -259,31 +260,5 @@
 		})(jQuery);
 	</script>
 
-	<style type="text/css">
-	.carousel {
-		background: #FAFAFA;
-		position: relative;
-		padding: 30px 0 50px;
-	}
-
-	.carousel-cell {
-		width: 66%;
-		height: 400px;
-		margin-right: 10px;
-		background: #8C8;
-		border-radius: 5px;
-		counter-increment: carousel-cell;
-	}
-
-	/* cell number */
-	.carousel-cell:before {
-		display: block;
-		text-align: center;
-		content: counter(carousel-cell);
-		line-height: 400px;
-		font-size: 80px;
-		color: white;
-	}
-</style>
 </body>
 </html>
